@@ -1,3 +1,16 @@
 {
-  "extends": "next/core-web-vitals"
+  "parser": "@typescript-eslint/parser",
+  "extends": [
+    "next/core-web-vitals",
+    "eslint:recommended",
+    "plugin:@typescript-eslint/recommended",
+    "plugin:react/recommended",
+    "plugin:prettier/recommended" // Add this line
+  ],
+  "plugins": ["@typescript-eslint", "react"],
+  "ignorePatterns": ["next.config.js"],
+  "rules": {
+    "semi": ["error", "always"],
+    "quotes": ["error", "single"]
+  }
 }
