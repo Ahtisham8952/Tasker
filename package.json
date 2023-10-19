@@ -39,7 +39,7 @@
     "react-slick": "^0.29.0",
     "react-switch": "^7.0.0",
     "slick-carousel": "^1.8.1",
-    "universal-storage": "^0.0.4",
+    
     "yup": "^1.2.0"
   },
   "devDependencies": {
