@@ -22,7 +22,8 @@
     "next.config.js",
     "src/components/app/Flok/LandingPage/FlokSlider.jsx",
     "pages/_app.jsx",
-    "pages/index.jsx"
+    "pages/index.jsx",
+    "src/theme.js"
   ],
   "exclude": ["node_modules"]
 }
