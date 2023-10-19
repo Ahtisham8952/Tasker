@@ -1,6 +1,6 @@
 import React from 'react';
 import { Box, Grid, Image, Text } from '@chakra-ui/react';
-import HeroSection from '../LandingPage/HeroSection';
+import HeroSection from './HeroSection';
 import NeedSomethingDoneSection from './NeedSomethingDoneSection';
 import PopularServices from './PopularServices';
 import LifeMadeEasierSection from './LifeMadeEasierSection';
