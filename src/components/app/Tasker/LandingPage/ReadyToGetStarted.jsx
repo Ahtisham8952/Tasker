@@ -28,8 +28,13 @@ const ReadyToGetStarted = () => {
             Ready to get started?
           </Text>
         </Box>
-        <Flex>
-          <Box w="45%">
+        <Flex
+          justifyContent={'center'}
+          mt={{ base: '30px', lg: '60px' }}
+          flexDirection={{ base: 'column', lg: 'row' }}
+          gap="20px"
+        >
+          <Box w={{ base: '100%', lg: '45%' }}>
             <Text
               fontWeight="600"
               fontSize="20px"
@@ -41,16 +46,49 @@ const ReadyToGetStarted = () => {
             >
               Hear that? The sweet sigh of relief. Start getting more done.
             </Text>
-            <Image src="/header/paperpast1.svg"></Image>
-            <Button
-              bg="#1F4A40"
-              colorScheme="#1F4A40"
-              borderRadius={'40px'}
-              maxW={'314px'}
-              py="25px"
-            ></Button>
+            <Image mx="auto" src="/header/paperpast1.svg"></Image>
+            <Flex mt="30px" justifyContent={'center'}>
+              <Button
+                bg="#1F4A40"
+                colorScheme="#1F4A40"
+                borderRadius={'40px'}
+                w={'314px'}
+                py="25px"
+                mx="auto"
+                h="73px"
+              >
+                Sign up
+              </Button>
+            </Flex>
           </Box>
-          <Box w="45%"></Box>
+          <Box w={{ base: '100%', lg: '45%' }}>
+            <Text
+              fontWeight="600"
+              fontSize="20px"
+              lineHeight="150% "
+              color="#1F1F1F"
+              maxW={'380px'}
+              mx="auto"
+              mb="40px"
+              textAlign={'center'}
+            >
+              Grow your own business while saving the day for busy neighbors.
+            </Text>
+            <Image mx="auto" src="/header/paperpast2.svg"></Image>
+            <Flex mt="30px" justifyContent={'center'}>
+              <Button
+                bg="#1F4A40"
+                colorScheme="#1F4A40"
+                borderRadius={'40px'}
+                w={'314px'}
+                py="25px"
+                mx="auto"
+                h="73px"
+              >
+                Become a Tasker
+              </Button>
+            </Flex>
+          </Box>
         </Flex>
       </Box>
     </>

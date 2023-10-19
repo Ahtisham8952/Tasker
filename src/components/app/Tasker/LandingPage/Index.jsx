@@ -8,6 +8,7 @@ import FeaturedTaskSlider from './FeaturedTaskSlider';
 import GotoTeamSection from './GotoTeamSection';
 import TakeOurWordSection from './TakeOurWordSection';
 import ReadyToGetStarted from './ReadyToGetStarted';
+import CitiesWhereWeWork from './CitiesWhereWeWork';
 const HomePageMain = () => {
   return (
     <>
@@ -32,6 +33,7 @@ const HomePageMain = () => {
           <TakeOurWordSection />
 
           <ReadyToGetStarted />
+          <CitiesWhereWeWork />
         </Box>
       </Box>
     </>
