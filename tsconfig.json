@@ -20,7 +20,9 @@
     "**/*.ts",
     "**/*.tsx",
     "next.config.js",
-    "src/components/app/Flok/LandingPage/FlokSlider.jsx"
+    "src/components/app/Flok/LandingPage/FlokSlider.jsx",
+    "pages/_app.jsx",
+    "pages/index.jsx"
   ],
   "exclude": ["node_modules"]
 }
