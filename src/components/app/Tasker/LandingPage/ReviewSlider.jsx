@@ -1,4 +1,4 @@
-import { Box, Button, Flex, Image, Img, Link, Text } from '@chakra-ui/react';
+import { Box, Button, Flex, Image, Text } from '@chakra-ui/react';
 import React, { Component } from 'react';
 import Slider from 'react-slick';
 import 'slick-carousel/slick/slick.css';

@@ -1,4 +1,4 @@
-import { Box, Button, Flex, Image, Input, Text } from '@chakra-ui/react';
+import { Box, Flex, Image, Input, Text } from '@chakra-ui/react';
 const Discover = [
   {
     Text: 'Become a Tasker ',
@@ -93,8 +93,8 @@ const Footers = () => {
             >
               Discover
             </Text>
-            {Discover.map((Disc) => (
-              <Box>
+            {Discover.map((Disc, index) => (
+              <Box key={index}>
                 <Text
                   mb="20px"
                   color="#FFF"
@@ -119,8 +119,8 @@ const Footers = () => {
             >
               Categories
             </Text>
-            {Categories.map((Disc) => (
-              <Box>
+            {Categories.map((Disc, index) => (
+              <Box key={index}>
                 <Text
                   mb="20px"
                   color="#FFF"
@@ -145,8 +145,8 @@ const Footers = () => {
             >
               Company
             </Text>
-            {Company.map((Disc) => (
-              <Box>
+            {Company.map((Disc, index) => (
+              <Box key={index}>
                 <Text
                   mb="20px"
                   color="#FFF"
