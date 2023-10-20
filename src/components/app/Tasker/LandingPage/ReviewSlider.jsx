@@ -167,9 +167,9 @@ export default class SimpleSlider extends Component {
                       lineHeight="150% "
                       color="#1F1F1F"
                     >
-                      "Dmitriy was great! Was fast to respond to the job, worked
-                      quickly but professionally, and had all the appropriate
-                      tools. Would recommend "
+                      Dmitri was great Was fast to respond to the job worked
+                      quickly but professionally and had all the appropriate
+                      tools. Would recommend
                     </Text>
                   </Box>
                   <Flex my="50px" gap="20px" alignItems={'center'}>
@@ -202,7 +202,7 @@ export default class SimpleSlider extends Component {
                         lineHeight="150% "
                         color="#1F1F1F"
                       >
-                        October 11, 2019, LA & OC
+                        October 11 2019 LA & OC
                       </Text>
                     </Box>
                   </Flex>
