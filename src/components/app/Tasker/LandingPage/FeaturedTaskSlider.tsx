@@ -25,7 +25,7 @@ const FeaturedTaskerData: TaskerData[] = [
     RepairRate: '$52.94/hr',
     AssemblyRate: '$47.05/hr',
     Description:
-      'I have supplies and resources available for helping you with your move ins, move outs and move aron...',
+      'I have supplies and resources available for helping you with your move ins, move outs and move aron',
   },
   {
     Image: '/header/tasker2.svg',
@@ -36,7 +36,7 @@ const FeaturedTaskerData: TaskerData[] = [
     RepairRate: '$52.94/hr',
     AssemblyRate: '$47.05/hr',
     Description:
-      'I have supplies and resources available for helping you with your move ins, move outs and move aroun...',
+      'I have supplies and resources available for helping you with your move ins, move outs and move aroun',
   },
   {
     Image: '/header/tasker3.svg',
@@ -47,7 +47,7 @@ const FeaturedTaskerData: TaskerData[] = [
     RepairRate: '$52.94/hr',
     AssemblyRate: '$47.05/hr',
     Description:
-      'I have supplies and resources available for helping you with your move ins, move outs and move aroun...',
+      'I have supplies and resources available for helping you with your move ins, move outs and move aroun',
   },
   {
     Image: '/header/tasker1.svg',
@@ -58,7 +58,7 @@ const FeaturedTaskerData: TaskerData[] = [
     RepairRate: '$52.94/hr',
     AssemblyRate: '$47.05/hr',
     Description:
-      'I have supplies and resources available for helping you with your move ins, move outs and move aroun...',
+      'I have supplies and resources available for helping you with your move ins, move outs and move aroun',
   },
 ];
 
@@ -362,7 +362,7 @@ const SimpleSlider: React.FC = () => {
                     color="#1F1F1F"
                     mb="10px"
                   >
-                    I'm the right person for the job:
+                    Im the right person for the job
                   </Text>
                   <Text
                     fontWeight="500"
