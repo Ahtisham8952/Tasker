@@ -1,10 +1,9 @@
 import '@fontsource/poppins';
-
 import { extendTheme } from '@chakra-ui/react';
 
 const TaskerTheme = extendTheme({
   colors: {
-    primary: '#258CEC ',
+    primary: '#258CEC',
     secondry: '#6943FF',
   },
   components: {
@@ -40,13 +39,14 @@ const TaskerTheme = extendTheme({
     lg: '991px',
     xl: '1280px',
     xxl: '1440px',
-    xxxl: '1660px', // Added missing 'px' suffix
+    xxxl: '1660px',
   },
   fonts: {
-    dinFonts: `"D-DIN", sans-serif`,
-    body: `"Montserrat", sans-serif`,
-    raleway: `"Raleway", sans-serif`,
-    rajdhaniFont: `"Rajdhani", sans-serif`,
+    dinFonts: '"D-DIN", sans-serif',
+    body: '"Montserrat", sans-serif',
+    raleway: '"Raleway", sans-serif',
+    rajdhaniFont: '"Rajdhani", sans-serif',
   },
 });
+
 export default TaskerTheme;
