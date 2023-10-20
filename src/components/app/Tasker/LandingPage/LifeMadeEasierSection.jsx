@@ -37,7 +37,7 @@ const LifeMadeEasierSection = () => {
               back for what you love without breaking the bank.
             </Text>
             <Flex alignItems={'center'} gap="30px" mt="24px">
-              <Image src="/header/backtick.svg"></Image>
+              <Image alt="img" src="/header/backtick.svg"></Image>
               <Text
                 fontWeight="500"
                 fontSize={{ base: '16px', lg: '24px' }}
@@ -48,7 +48,7 @@ const LifeMadeEasierSection = () => {
               </Text>
             </Flex>
             <Flex alignItems={'center'} gap="30px" mt="16px">
-              <Image src="/header/backtick.svg"></Image>
+              <Image alt="img" src="/header/backtick.svg"></Image>
               <Text
                 fontWeight="500"
                 fontSize={{ base: '16px', lg: '24px' }}
@@ -59,7 +59,7 @@ const LifeMadeEasierSection = () => {
               </Text>
             </Flex>
             <Flex alignItems={'center'} gap="30px" mt="16px">
-              <Image src="/header/backtick.svg"></Image>
+              <Image alt="img" src="/header/backtick.svg"></Image>
               <Text
                 fontWeight="500"
                 fontSize={{ base: '16px', lg: '24px' }}
@@ -71,7 +71,7 @@ const LifeMadeEasierSection = () => {
             </Flex>
           </Box>
           <Box w={{ base: '100%', md: '50%' }}>
-            <Image w="100%" src="/header/easylife.png"></Image>
+            <Image alt="img" w="100%" src="/header/easylife.png"></Image>
           </Box>
         </Flex>
       </Box>

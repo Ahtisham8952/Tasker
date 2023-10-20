@@ -12,7 +12,7 @@ const GotoTeamSection = () => {
           justifyContent={'space-between'}
         >
           <Box w={{ base: '100%', md: '50%' }}>
-            <Image w="100%" src="/header/easylifegoals.png"></Image>
+            <Image alt="img" w="100%" src="/header/easylifegoals.png"></Image>
           </Box>
           <Box w={{ base: '100%', md: '45%' }}>
             <Text
@@ -40,7 +40,7 @@ const GotoTeamSection = () => {
               — and for — life. Whatever you need, they’ve got it covered.
             </Text>
             <Flex alignItems={'center'} gap="30px" mt="24px">
-              <Image src="/header/backtick.svg"></Image>
+              <Image alt="img" src="/header/backtick.svg"></Image>
               <Text
                 fontWeight="500"
                 fontSize={{ base: '16px', lg: '24px' }}
@@ -51,7 +51,7 @@ const GotoTeamSection = () => {
               </Text>
             </Flex>
             <Flex alignItems={'center'} gap="30px" mt="16px">
-              <Image src="/header/backtick.svg"></Image>
+              <Image alt="img" src="/header/backtick.svg"></Image>
               <Text
                 fontWeight="500"
                 fontSize={{ base: '16px', lg: '24px' }}
@@ -62,7 +62,7 @@ const GotoTeamSection = () => {
               </Text>
             </Flex>
             <Flex alignItems={'center'} gap="30px" mt="16px">
-              <Image src="/header/backtick.svg"></Image>
+              <Image alt="img" src="/header/backtick.svg"></Image>
               <Text
                 fontWeight="500"
                 fontSize={{ base: '16px', lg: '24px' }}

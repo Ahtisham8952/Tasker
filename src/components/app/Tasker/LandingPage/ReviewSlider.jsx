@@ -174,7 +174,7 @@ export default class SimpleSlider extends Component {
                   </Box>
                   <Flex my="50px" gap="20px" alignItems={'center'}>
                     <Box>
-                      <Image src="/header/futifullgirl.svg"></Image>
+                      <Image alt="img" src="/header/futifullgirl.svg"></Image>
                     </Box>
                     <Box>
                       <Text
@@ -194,7 +194,7 @@ export default class SimpleSlider extends Component {
                         >
                           Mounting
                         </Text>
-                        <Image src="/header/strareview.svg"></Image>
+                        <Image alt="img" src="/header/strareview.svg"></Image>
                       </Flex>
                       <Text
                         fontWeight="400"

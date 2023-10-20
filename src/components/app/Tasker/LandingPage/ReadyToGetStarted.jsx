@@ -46,7 +46,7 @@ const ReadyToGetStarted = () => {
             >
               Hear that? The sweet sigh of relief. Start getting more done.
             </Text>
-            <Image mx="auto" src="/header/paperpast1.svg"></Image>
+            <Image alt="img" mx="auto" src="/header/paperpast1.svg"></Image>
             <Flex mt="30px" justifyContent={'center'}>
               <Button
                 bg="#1F4A40"
@@ -74,7 +74,7 @@ const ReadyToGetStarted = () => {
             >
               Grow your own business while saving the day for busy neighbors.
             </Text>
-            <Image mx="auto" src="/header/paperpast2.svg"></Image>
+            <Image alt="img" mx="auto" src="/header/paperpast2.svg"></Image>
             <Flex mt="30px" justifyContent={'center'}>
               <Button
                 bg="#1F4A40"

@@ -123,7 +123,7 @@ const HeroSection = () => {
               </Box>
             </Box>
             <Box w="55%" display={{ base: 'none', lg: 'block' }}>
-              <Image src="/header/CarpanterImage.png"></Image>
+              <Image alt="img" src="/header/CarpanterImage.png"></Image>
             </Box>
           </Flex>
         </Box>

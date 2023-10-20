@@ -94,7 +94,7 @@ const PopularServices = () => {
                     ' 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19)',
                 }}
               >
-                <Image w="100%" src={Ser.Image}></Image>
+                <Image alt="img" w="100%" src={Ser.Image}></Image>
                 <Box
                   bg="white"
                   borderRadius={'0px 0px 10px 10px'}
@@ -110,7 +110,7 @@ const PopularServices = () => {
                     {Ser.Name}
                   </Text>
                   <Flex alignItems={'center'} gap="10px">
-                    <Image src="/header/pricetag1.svg"></Image>
+                    <Image alt="img" src="/header/pricetag1.svg"></Image>
                     <Text
                       fontWeight="400"
                       fontSize="20px"

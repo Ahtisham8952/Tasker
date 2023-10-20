@@ -61,7 +61,7 @@ const NeedSomethingDoneSection = () => {
         >
           {MainSection?.map((li, index) => (
             <Box key={index}>
-              <Image src={li.Image} alt="img"></Image>
+              <Image alt="img" src={li.Image}></Image>
               <Text
                 fontWeight="600"
                 fontSize={{ base: '16px', md: '18px', lg: '21px', xl: '28px' }}

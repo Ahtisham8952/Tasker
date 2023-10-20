@@ -130,7 +130,7 @@ const CitiesWhereWeWork = () => {
           >
             {Cities?.map((li, index) => (
               <Box>
-                <Image mb="10px" mx="auto" src={li.CityImage}></Image>
+                <Image alt="img" mb="10px" mx="auto" src={li.CityImage}></Image>
                 <Text
                   textAlign={'center'}
                   fontWeight="500"
