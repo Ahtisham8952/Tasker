@@ -4,7 +4,7 @@ import 'slick-carousel/slick/slick.css';
 import 'slick-carousel/slick/slick-theme.css';
 import { Box, Button, Flex, Image, Text } from '@chakra-ui/react';
 
-interface TaskerData {
+type TaskerData = {
   Image: string;
   TaskerName: string;
   TaskerReviews: string;
@@ -13,26 +13,26 @@ interface TaskerData {
   RepairRate: string;
   AssemblyRate: string;
   Description: string;
-}
+};
 
 const FeaturedTaskerData: TaskerData[] = [
   {
     Image: '/header/tasker1.svg',
     TaskerName: 'Jeffrey C.',
     TaskerReviews: '100% positive reviews',
-    CompletedTasks: ' 174 completed tasks',
-    MovingRate: ' $52.94/hr',
+    CompletedTasks: '174 completed tasks',
+    MovingRate: '$52.94/hr',
     RepairRate: '$52.94/hr',
     AssemblyRate: '$47.05/hr',
     Description:
-      'I have supplies and resources available for helping you with your move ins, move outs and move aroun...',
+      'I have supplies and resources available for helping you with your move ins, move outs and move aron...',
   },
   {
     Image: '/header/tasker2.svg',
     TaskerName: 'John K.',
     TaskerReviews: '99% positive reviews',
-    CompletedTasks: ' 1953 completed tasks',
-    MovingRate: ' $52.94/hr',
+    CompletedTasks: '1953 completed tasks',
+    MovingRate: '$52.94/hr',
     RepairRate: '$52.94/hr',
     AssemblyRate: '$47.05/hr',
     Description:
@@ -42,8 +42,8 @@ const FeaturedTaskerData: TaskerData[] = [
     Image: '/header/tasker3.svg',
     TaskerName: 'Jeffrey C.',
     TaskerReviews: '100% positive reviews',
-    CompletedTasks: ' 174 completed tasks',
-    MovingRate: ' $52.94/hr',
+    CompletedTasks: '174 completed tasks',
+    MovingRate: '$52.94/hr',
     RepairRate: '$52.94/hr',
     AssemblyRate: '$47.05/hr',
     Description:
@@ -53,8 +53,8 @@ const FeaturedTaskerData: TaskerData[] = [
     Image: '/header/tasker1.svg',
     TaskerName: 'Jeffrey C.',
     TaskerReviews: '100% positive reviews',
-    CompletedTasks: ' 174 completed tasks',
-    MovingRate: ' $52.94/hr',
+    CompletedTasks: '174 completed tasks',
+    MovingRate: '$52.94/hr',
     RepairRate: '$52.94/hr',
     AssemblyRate: '$47.05/hr',
     Description:
