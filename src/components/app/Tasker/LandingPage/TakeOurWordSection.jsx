@@ -29,7 +29,7 @@ const TakeOurWordSection = () => {
                 }}
                 color="#000000"
               >
-                Don't just take our word for it
+                Dont just take our word for it
               </Text>
               <Text
                 fontWeight="400"

@@ -1,4 +1,6 @@
+import React from 'react';
 import { Box, Flex, Image, Input, Text } from '@chakra-ui/react';
+
 const Discover = [
   {
     Text: 'Become a Tasker ',

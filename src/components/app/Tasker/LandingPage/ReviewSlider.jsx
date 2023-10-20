@@ -15,7 +15,7 @@ const FeaturedTaskerData = [
     RepairRate: '$52.94/hr',
     AssemblyRate: '$47.05/hr',
     Description:
-      'I have supplies and resources available for helping you with your move ins, move outs and move aroun...',
+      'I have supplies and resources available for helping you with your move ins, move outs and move aroun',
   },
   {
     Image: '/header/tasker2.svg',
@@ -26,7 +26,7 @@ const FeaturedTaskerData = [
     RepairRate: '$52.94/hr',
     AssemblyRate: '$47.05/hr',
     Description:
-      'I have supplies and resources available for helping you with your move ins, move outs and move aroun...',
+      'I have supplies and resources available for helping you with your move ins, move outs and move aroun',
   },
   {
     Image: '/header/tasker3.svg',
@@ -37,7 +37,7 @@ const FeaturedTaskerData = [
     RepairRate: '$52.94/hr',
     AssemblyRate: '$47.05/hr',
     Description:
-      'I have supplies and resources available for helping you with your move ins, move outs and move aroun...',
+      'I have supplies and resources available for helping you with your move ins, move outs and move aroun',
   },
   {
     Image: '/header/tasker1.svg',
@@ -48,7 +48,7 @@ const FeaturedTaskerData = [
     RepairRate: '$52.94/hr',
     AssemblyRate: '$47.05/hr',
     Description:
-      'I have supplies and resources available for helping you with your move ins, move outs and move aroun...',
+      'I have supplies and resources available for helping you with your move ins, move outs and move aroun',
   },
 ];
 
