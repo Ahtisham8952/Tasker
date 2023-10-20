@@ -4,15 +4,11 @@ import {
   MenuButton,
   MenuList,
   MenuItem,
-  MenuItemOption,
-  MenuGroup,
-  MenuOptionGroup,
-  MenuDivider,
   Text,
   Flex,
   Image,
 } from '@chakra-ui/react';
-import { ChevronDownIcon } from '@chakra-ui/icons';
+
 const LanguageDropdown = () => {
   return (
     <Menu>

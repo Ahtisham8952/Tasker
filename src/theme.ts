@@ -1,8 +1,7 @@
 import '@fontsource/poppins';
 
 import { extendTheme } from '@chakra-ui/react';
-// import "@fontsource/montserrat";
-// import "@fontsource/montserrat/500.css";
+
 const TaskerTheme = extendTheme({
   colors: {
     primary: '#258CEC ',

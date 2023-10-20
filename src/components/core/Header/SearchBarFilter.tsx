@@ -1,14 +1,4 @@
-import { TriangleDownIcon } from '@chakra-ui/icons';
-import {
-  Box,
-  Image,
-  Flex,
-  Input,
-  VStack,
-  Button,
-  Grid,
-  Link,
-} from '@chakra-ui/react';
+import { Box, Image, Flex, Input, Button, Grid, Link } from '@chakra-ui/react';
 
 import React, { useState } from 'react';
 const data = [
@@ -96,9 +86,7 @@ const data = [
 ];
 const SearchBarFilter = () => {
   const [isOpen, setIsOpen] = useState(false);
-  const handleOptionSelect = () => {
-    setIsOpen(false);
-  };
+
   return (
     <Box>
       <Box

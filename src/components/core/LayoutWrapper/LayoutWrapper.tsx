@@ -1,3 +1,4 @@
+import React from 'react';
 import { Box } from '@chakra-ui/react';
 import { FC, ReactNode } from 'react';
 import Footer from '../Footer/Footer';

@@ -11,14 +11,9 @@ import {
   Link,
   Image,
   Box,
-  Input,
 } from '@chakra-ui/react';
 import { HamburgerIcon } from '@chakra-ui/icons';
 import React from 'react';
-import MenuItemList from './MenuList';
-import SearchBox from './Search';
-import LanguageDropdown from './LanguageDropdown';
-import SearchBarFilter from './SearchBarFilter';
 
 export const MobileMenu = () => {
   const { isOpen, onOpen, onClose } = useDisclosure();

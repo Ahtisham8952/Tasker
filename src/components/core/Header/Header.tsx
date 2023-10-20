@@ -1,25 +1,8 @@
-import { TriangleDownIcon } from '@chakra-ui/icons';
-import {
-  Box,
-  Link,
-  Image,
-  Button,
-  Container,
-  Flex,
-  Menu,
-  MenuButton,
-  MenuList,
-  MenuItem,
-  Text,
-  Input,
-} from '@chakra-ui/react';
+import { Box, Link, Image, Button, Container, Flex } from '@chakra-ui/react';
 
 import React from 'react';
 
 import MobileMenu from './MobileMenu';
-
-import LanguageDropdown from './LanguageDropdown';
-import SearchBarFilter from './SearchBarFilter';
 
 const Header = () => {
   return (

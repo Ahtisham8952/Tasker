@@ -1,4 +1,4 @@
-import { ChevronDownIcon, ChevronRightIcon } from '@chakra-ui/icons';
+import { ChevronDownIcon } from '@chakra-ui/icons';
 import { Image, Button, Flex, Text, SystemStyleObject } from '@chakra-ui/react';
 import React from 'react';
 
