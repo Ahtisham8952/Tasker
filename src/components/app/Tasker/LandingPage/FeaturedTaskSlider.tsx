@@ -1,11 +1,21 @@
-import { Box, Button, Flex, Image, Text } from '@chakra-ui/react';
 import React, { Component } from 'react';
 import Slider from 'react-slick';
 import 'slick-carousel/slick/slick.css';
-
 import 'slick-carousel/slick/slick-theme.css';
+import { Box, Button, Flex, Image, Text } from '@chakra-ui/react';
 
-const FeaturedTaskerData = [
+interface TaskerData {
+  Image: string;
+  TaskerName: string;
+  TaskerReviews: string;
+  CompletedTasks: string;
+  MovingRate: string;
+  RepairRate: string;
+  AssemblyRate: string;
+  Description: string;
+}
+
+const FeaturedTaskerData: TaskerData[] = [
   {
     Image: '/header/tasker1.svg',
     TaskerName: 'Jeffrey C.',
@@ -53,17 +63,26 @@ const FeaturedTaskerData = [
 ];
 
 export default class SimpleSlider extends Component {
-  constructor(props) {
+  private slider: Slider | null = null;
+
+  constructor(props: any) {
     super(props);
     this.next = this.next.bind(this);
     this.previous = this.previous.bind(this);
   }
+
   next() {
-    this.slider.slickNext();
+    if (this.slider) {
+      this.slider.slickNext();
+    }
   }
+
   previous() {
-    this.slider.slickPrev();
+    if (this.slider) {
+      this.slider.slickPrev();
+    }
   }
+
   render() {
     const settings = {
       dots: false,
@@ -126,8 +145,9 @@ export default class SimpleSlider extends Component {
         },
       ],
     };
+
     return (
-      <Box position={'relative'} py={{ base: '30px', lg: '60px' }}>
+      <Box position="relative" py={{ base: '30px', lg: '60px' }}>
         <Text
           mb="50px"
           fontWeight="600"
@@ -150,19 +170,19 @@ export default class SimpleSlider extends Component {
           Featured Taskers
         </Text>
         <Box
-          position={'absolute'}
-          display={'flex'}
-          justifyContent={'space-between'}
+          position="absolute"
+          display="flex"
+          justifyContent="space-between"
           right="0px"
           top="50%"
-          zIndex={'99'}
+          zIndex="99"
         >
           <Button
-            justifyContent={'right'}
+            justifyContent="right"
             px="0px"
             onClick={this.next}
             bg="transparent"
-            colorScheme={'transparent'}
+            colorScheme="transparent"
           >
             <Image
               alt="img"
@@ -174,12 +194,7 @@ export default class SimpleSlider extends Component {
         <Box w="100%" mx="auto" pr={{ base: '20px', md: '40px', lg: '80px' }}>
           <Slider ref={(c) => (this.slider = c)} {...settings}>
             {FeaturedTaskerData.map((TaskerData, index) => (
-              <Box
-                cursor={'pointer'}
-                borderRadius={'20px'}
-                key={index}
-                m="10px"
-              >
+              <Box cursor="pointer" borderRadius="20px" key={index} m="10px">
                 <Box
                   _hover={{
                     boxShadow:
@@ -188,13 +203,13 @@ export default class SimpleSlider extends Component {
                   border="1px solid #CFCFCF"
                   p={{ base: '15px', xxl: '15px', xxxl: '30px' }}
                   mx={{ base: '15px', md: '30px' }}
-                  borderRadius={'20px'}
+                  borderRadius="20px"
                 >
                   <Flex
-                    alignItems={'center'}
+                    alignItems="center"
                     gap="27px"
                     pb="24px"
-                    borderBottom={'1px solid #BFB3B3'}
+                    borderBottom="1px solid #BFB3B3"
                     flexDirection={{ base: 'column', md: 'row' }}
                   >
                     <Box mb="20px">
@@ -211,7 +226,7 @@ export default class SimpleSlider extends Component {
                           xxl: '24px',
                           xxxl: '32px',
                         }}
-                        lineHeight="150% "
+                        lineHeight="150%"
                         color="#1F1F1F"
                       >
                         {TaskerData.TaskerName}
@@ -223,7 +238,7 @@ export default class SimpleSlider extends Component {
                           md: '16px',
                           lg: '20px',
                         }}
-                        lineHeight="150% "
+                        lineHeight="150%"
                         color="#1F1F1F"
                       >
                         {TaskerData.TaskerReviews}
@@ -235,7 +250,7 @@ export default class SimpleSlider extends Component {
                           md: '16px',
                           lg: '20px',
                         }}
-                        lineHeight="150% "
+                        lineHeight="150%"
                         color="#1F1F1F"
                       >
                         {TaskerData.CompletedTasks}
@@ -243,7 +258,7 @@ export default class SimpleSlider extends Component {
                     </Box>
                   </Flex>
 
-                  <Box py="20px" borderBottom={'1px solid #BFB3B3'}>
+                  <Box py="20px" borderBottom="1px solid #BFB3B3">
                     <Text
                       fontWeight="600"
                       fontSize={{
@@ -253,7 +268,7 @@ export default class SimpleSlider extends Component {
                         xl: '22px',
                         xxl: '24px',
                       }}
-                      lineHeight="150% "
+                      lineHeight="150%"
                       color="#1F1F1F"
                       mb="16px"
                     >
@@ -261,8 +276,8 @@ export default class SimpleSlider extends Component {
                     </Text>
                     <Flex
                       mb="18px"
-                      justifyContent={'space-between'}
-                      alignItems={'center'}
+                      justifyContent="space-between"
+                      alignItems="center"
                     >
                       <Text
                         fontWeight="500"
@@ -271,7 +286,7 @@ export default class SimpleSlider extends Component {
                           md: '16px',
                           lg: '20px',
                         }}
-                        lineHeight="150% "
+                        lineHeight="150%"
                         color="#1F1F1F"
                       >
                         Help Moving
@@ -283,7 +298,7 @@ export default class SimpleSlider extends Component {
                           md: '16px',
                           lg: '20px',
                         }}
-                        lineHeight="150% "
+                        lineHeight="150%"
                         color="#1F1F1F"
                       >
                         {TaskerData.MovingRate}
@@ -291,8 +306,8 @@ export default class SimpleSlider extends Component {
                     </Flex>
                     <Flex
                       mb="18px"
-                      justifyContent={'space-between'}
-                      alignItems={'center'}
+                      justifyContent="space-between"
+                      alignItems="center"
                     >
                       <Text
                         fontWeight="500"
@@ -301,7 +316,7 @@ export default class SimpleSlider extends Component {
                           md: '16px',
                           lg: '20px',
                         }}
-                        lineHeight="150% "
+                        lineHeight="150%"
                         color="#1F1F1F"
                       >
                         Home Repairs
@@ -313,16 +328,13 @@ export default class SimpleSlider extends Component {
                           md: '16px',
                           lg: '20px',
                         }}
-                        lineHeight="150% "
+                        lineHeight="150%"
                         color="#1F1F1F"
                       >
                         {TaskerData.RepairRate}
                       </Text>
                     </Flex>
-                    <Flex
-                      justifyContent={'space-between'}
-                      alignItems={'center'}
-                    >
+                    <Flex justifyContent="space-between" alignItems="center">
                       <Text
                         fontWeight="500"
                         fontSize={{
@@ -330,7 +342,7 @@ export default class SimpleSlider extends Component {
                           md: '16px',
                           lg: '20px',
                         }}
-                        lineHeight="150% "
+                        lineHeight="150%"
                         color="#1F1F1F"
                       >
                         Furniture Assembly
@@ -342,7 +354,7 @@ export default class SimpleSlider extends Component {
                           md: '16px',
                           lg: '20px',
                         }}
-                        lineHeight="150% "
+                        lineHeight="150%"
                         color="#1F1F1F"
                       >
                         {TaskerData.AssemblyRate}
@@ -359,7 +371,7 @@ export default class SimpleSlider extends Component {
                         xl: '22px',
                         xxl: '24px',
                       }}
-                      lineHeight="150% "
+                      lineHeight="150%"
                       color="#1F1F1F"
                       mb="10px"
                     >
@@ -372,7 +384,7 @@ export default class SimpleSlider extends Component {
                         md: '16px',
                         lg: '20px',
                       }}
-                      lineHeight="150% "
+                      lineHeight="150%"
                       color="#1F1F1F"
                     >
                       {TaskerData.Description}

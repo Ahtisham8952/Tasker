@@ -1,12 +1,12 @@
 import React, { useState } from 'react';
 import { Menu, MenuButton, MenuList, MenuItem, Button } from '@chakra-ui/react';
 
-const options = ['Option 1', 'Option 2', 'Option 3'];
+const options: string[] = ['Option 1', 'Option 2', 'Option 3'];
 
 function CategoryDropdown() {
-  const [selectedOption, setSelectedOption] = useState(null);
+  const [selectedOption, setSelectedOption] = useState<string | null>(null);
 
-  const handleOptionSelect = (option) => {
+  const handleOptionSelect = (option: string) => {
     setSelectedOption(option);
   };
 

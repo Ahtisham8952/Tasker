@@ -1,6 +1,7 @@
 import React from 'react';
 import HomePageMain from '../src/components/app/Tasker/LandingPage';
-const Home = () => {
+
+const Home: React.FC = () => {
   return (
     <>
       <HomePageMain />
