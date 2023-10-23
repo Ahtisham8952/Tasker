@@ -1,0 +1,6 @@
+@font-face {
+  font-family: 'Inknut Antiqua Black';
+  src: url('../Fonts/InknutAntiqua-Bold.ttf') format('truetype'); /* Adjust the path to your font file */
+  font-weight: 700; /* Adjust the font weight if necessary */
+  /* You can include other properties like font-style if needed. */
+}

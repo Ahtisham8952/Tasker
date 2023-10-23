@@ -9,33 +9,36 @@ import GotoTeamSection from './GotoTeamSection';
 import TakeOurWordSection from './TakeOurWordSection';
 import ReadyToGetStarted from './ReadyToGetStarted';
 import CitiesWhereWeWork from './CitiesWhereWeWork';
+import LayoutWrapper from '../../../core/LayoutWrapper/LayoutWrapper';
 const HomePageMain = () => {
   return (
     <>
-      <Box bg="white">
-        <HeroSection />
-        <Box
-          pt={{ base: '50px', lg: '100px' }}
-          maxW={'1760px'}
-          mx={'auto'}
-          px="20px"
-        >
-          <NeedSomethingDoneSection />
+      <LayoutWrapper>
+        <Box bg="white">
+          <HeroSection />
+          <Box
+            pt={{ base: '50px', lg: '100px' }}
+            maxW={'1760px'}
+            mx={'auto'}
+            px="20px"
+          >
+            <NeedSomethingDoneSection />
 
-          <PopularServices />
+            <PopularServices />
 
-          <LifeMadeEasierSection />
+            <LifeMadeEasierSection />
 
-          <FeaturedTaskSlider />
+            <FeaturedTaskSlider />
 
-          <GotoTeamSection />
+            <GotoTeamSection />
 
-          <TakeOurWordSection />
+            <TakeOurWordSection />
 
-          <ReadyToGetStarted />
-          <CitiesWhereWeWork />
+            <ReadyToGetStarted />
+            <CitiesWhereWeWork />
+          </Box>
         </Box>
-      </Box>
+      </LayoutWrapper>
     </>
   );
 };

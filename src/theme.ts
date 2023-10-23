@@ -1,5 +1,6 @@
 import '@fontsource/poppins';
 import { extendTheme } from '@chakra-ui/react';
+import '@fontsource/inknut-antiqua';
 
 const TaskerTheme = extendTheme({
   colors: {
@@ -44,7 +45,7 @@ const TaskerTheme = extendTheme({
   fonts: {
     dinFonts: '"D-DIN", sans-serif',
     body: '"Montserrat", sans-serif',
-    raleway: '"Raleway", sans-serif',
+    antique: '"InknutAntiqua-Bold", sans-serif',
     rajdhaniFont: '"Rajdhani", sans-serif',
   },
 });
