@@ -1,4 +1,4 @@
-import { Box, Grid, Image, Text } from '@chakra-ui/react';
+import { Box, Grid, Text } from '@chakra-ui/react';
 import React from 'react';
 
 const ServiceCard = () => {
