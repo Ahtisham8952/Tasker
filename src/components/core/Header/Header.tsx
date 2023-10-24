@@ -7,7 +7,12 @@ import MobileMenu from './MobileMenu';
 const Header = () => {
   return (
     <>
-      <Box py={{ base: '6px', md: '15px' }} bg="#1F4A40" position={'relative'}>
+      <Box
+        py={{ base: '6px', md: '15px' }}
+        bg="#1F4A40"
+        position={'relative'}
+        boxShadow={'0 -6px 10px 5px rgba(0,0,0,0.5)'}
+      >
         <Container maxW={'1760px'} px="20px">
           <Flex
             justifyContent="space-between"

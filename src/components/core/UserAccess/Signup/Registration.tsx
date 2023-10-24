@@ -1,21 +1,13 @@
-import { Box, Button, Input, Link, Text } from '@chakra-ui/react';
-import React, { useState } from 'react';
+import { Box, Button } from '@chakra-ui/react';
+import React from 'react';
 import CustomWrapper from '../CustomWrapper';
 import CustomLabelInput from '../CustomLabelInput';
 
 const Registration = () => {
-  const [email, setemail] = useState('');
-  const [password, setpassword] = useState('');
-  const handleSubmit = (e) => {
-    e.preventDefault(); // Add e as the parameter to access the event object
-    console.log(email);
-    console.log(password);
-  };
-
   return (
     <>
       <CustomWrapper>
-        <form onSubmit={handleSubmit}>
+        <form>
           <CustomLabelInput
             Label="First Name"
             InputType="text"
@@ -31,6 +23,16 @@ const Registration = () => {
             InputType="text"
             Inputplaceholder="Email"
           />
+          <CustomLabelInput
+            Label="Password"
+            InputType="password"
+            Inputplaceholder="Password"
+          />
+          <CustomLabelInput
+            Label="Zip Code "
+            InputType="text"
+            Inputplaceholder="Zip Code "
+          />
 
           <Button
             mt="20px"
@@ -44,7 +46,6 @@ const Registration = () => {
             lineHeight={'24px'}
             borderRadius={'40px'}
             type="submit"
-            onClick={handleSubmit}
           >
             Create Account
           </Button>
