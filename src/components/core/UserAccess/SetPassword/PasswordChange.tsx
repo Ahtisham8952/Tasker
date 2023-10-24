@@ -33,7 +33,8 @@ export const PasswordChange = () => {
           lineHeight="150% "
           color="#1F1F1F"
         >
-          Enter your email and we'll send you instructions to set your password
+          Enter your email and we will send you instructions to set your
+          password
         </Text>
         <form>
           <CustomLabelInput

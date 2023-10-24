@@ -1,7 +1,7 @@
 import { Box, Grid, Image, Text } from '@chakra-ui/react';
 import React from 'react';
 
-const ServiceCard = ({ data }) => {
+const ServiceCard = () => {
   return (
     <>
       <Box>
@@ -18,7 +18,7 @@ const ServiceCard = ({ data }) => {
           w="100%"
         >
           <Box>
-            <Image src={data?.CardImage}></Image>
+            {/* <Image src={data?.CardImage}></Image> */}
             <Text
               fontWeight="700"
               fontSize={{
@@ -32,7 +32,7 @@ const ServiceCard = ({ data }) => {
               lineHeight="150% "
               color="#1F1F1F"
             >
-              {data?.CardHeading}
+              {/* {data?.CardHeading} */}
             </Text>
             <Text
               fontWeight="500"
@@ -44,7 +44,7 @@ const ServiceCard = ({ data }) => {
               lineHeight="150% "
               color="#1F1F1F"
             >
-              {data?.CardDescription}
+              {/* {data?.CardDescription} */}
             </Text>
           </Box>
         </Grid>
