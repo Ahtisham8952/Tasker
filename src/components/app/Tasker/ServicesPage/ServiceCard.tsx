@@ -57,9 +57,9 @@ ServiceCard.propTypes = {
     CardImage: PropTypes.string,
     CardHeading: PropTypes.string,
     CardDescription: PropTypes.string,
-    paragraphs: PropTypes.arrayOf(
+    pragraphs: PropTypes.arrayOf(
       PropTypes.shape({
-        paragraphText: PropTypes.string,
+        pragraphText: PropTypes.string,
       })
     ),
   }),
