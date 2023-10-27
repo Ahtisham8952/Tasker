@@ -1,55 +1,52 @@
-import { Box, Grid, Text } from '@chakra-ui/react';
+import { Box, Grid, Text, Image } from '@chakra-ui/react';
 import React from 'react';
 
-const ServiceCard = () => {
+const ServiceCard = ({ data }) => {
   return (
-    <>
-      <Box>
-        <Grid
-          mb="30px"
-          gap="24px"
-          templateColumns={{
-            base: 'repeat(1, 1fr)',
-            sm: 'repeat(2, 1fr)',
-            md: 'repeat(2, 1fr)',
-            lg: 'repeat(3, 1fr)',
-            xl: 'repeat(3, 1fr)',
-          }}
-          w="100%"
-        >
-          <Box>
-            {/* <Image src={data?.CardImage}></Image> */}
-            <Text
-              fontWeight="700"
-              fontSize={{
-                base: '18px',
-                md: '18px',
-                lg: '20px',
-                xl: '22px',
-                xxl: '24px',
-                xxxl: '32px',
-              }}
-              lineHeight="150% "
-              color="#1F1F1F"
-            >
-              {/* {data?.CardHeading} */}
-            </Text>
-            <Text
-              fontWeight="500"
-              fontSize={{
-                base: '14px',
-                md: '16px',
-                lg: '20px',
-              }}
-              lineHeight="150% "
-              color="#1F1F1F"
-            >
-              {/* {data?.CardDescription} */}
-            </Text>
-          </Box>
-        </Grid>
+    <Box mb="30px">
+      <Image src={data?.CardImage}></Image>
+      <Text
+        fontWeight="700"
+        fontSize={{
+          base: '18px',
+          md: '18px',
+          lg: '20px',
+          xl: '22px',
+          xxl: '24px',
+          xxxl: '32px',
+        }}
+        lineHeight="150% "
+        color="#1F1F1F"
+      >
+        {data?.CardHeading}
+      </Text>
+      <Text
+        fontWeight="500"
+        fontSize={{
+          base: '14px',
+          md: '16px',
+          lg: '20px',
+        }}
+        lineHeight="150% "
+        color="#1F1F1F"
+      >
+        {data?.CardDescription}
+      </Text>
+      <Box mt="30px">
+        {data?.pragraphs?.map((pragraph) => (
+          <Text
+            mb="10px"
+            color="#1F4A40"
+            fontSize="24px"
+            fontStyle="normal"
+            fontWeight="500"
+            lineHeight="normal"
+          >
+            {pragraph?.pragraphText}
+          </Text>
+        ))}
       </Box>
-    </>
+    </Box>
   );
 };
 

@@ -1,7 +1,8 @@
 import React from 'react';
 import { Box, Flex, Text, Image, Button, Input, Grid } from '@chakra-ui/react';
 import { SearchIcon } from '@chakra-ui/icons';
-const Cities = [
+import CitiesComponent from './CitiesComponent';
+const WorkCities = [
   {
     CityImage: '/header/CityTop1.svg',
     CityName: 'Atlanta',
@@ -115,39 +116,20 @@ const CitiesWhereWeWork = () => {
             </Flex>
           </Box>
         </Flex>
-        <Box>
-          <Grid
-            mb="30px"
-            gap="24px"
-            templateColumns={{
-              base: 'repeat(2, 1fr)',
-              sm: 'repeat(3, 1fr)',
-              md: 'repeat(4, 1fr)',
-              lg: 'repeat(7, 1fr)',
-              xl: 'repeat(7, 1fr)',
-            }}
-            w="100%"
-          >
-            {Cities?.map((li, index) => (
-              <Box key={index}>
-                <Image alt="img" mb="10px" mx="auto" src={li.CityImage}></Image>
-                <Text
-                  textAlign={'center'}
-                  fontWeight="500"
-                  fontSize={{
-                    base: '14px',
-                    md: '16px',
-                    lg: '20px',
-                  }}
-                  lineHeight="150% "
-                  color="#1F1F1F"
-                >
-                  {li.CityName}
-                </Text>
-              </Box>
-            ))}
-          </Grid>
-        </Box>
+        <Grid
+          mb="30px"
+          gap="24px"
+          templateColumns={{
+            base: 'repeat(2, 1fr)',
+            sm: 'repeat(3, 1fr)',
+            md: 'repeat(4, 1fr)',
+            lg: 'repeat(7, 1fr)',
+            xl: 'repeat(7, 1fr)',
+          }}
+          w="100%"
+        >
+          <CitiesComponent Cities={WorkCities} />
+        </Grid>
       </Box>
     </>
   );

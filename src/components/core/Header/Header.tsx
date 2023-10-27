@@ -47,7 +47,7 @@ const Header = () => {
               >
                 <Box pb="4px" minWidth={'3px'}>
                   <Link
-                    href="#"
+                    href="/location"
                     color="white"
                     _hover={{ textDecoration: 'none' }}
                     fontSize="16px"
@@ -64,7 +64,7 @@ const Header = () => {
                   fontWeight="400"
                   lineHeight={'24px'}
                 >
-                  <Link href="#" _hover={{ textDecoration: 'none' }}>
+                  <Link href="/services" _hover={{ textDecoration: 'none' }}>
                     Services
                   </Link>
                 </Box>
