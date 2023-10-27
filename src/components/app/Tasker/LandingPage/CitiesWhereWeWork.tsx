@@ -1,5 +1,5 @@
 import React from 'react';
-import { Box, Flex, Text, Image, Button, Input, Grid } from '@chakra-ui/react';
+import { Box, Flex, Text, Button, Input, Grid } from '@chakra-ui/react';
 import { SearchIcon } from '@chakra-ui/icons';
 import CitiesComponent from './CitiesComponent';
 const WorkCities = [
