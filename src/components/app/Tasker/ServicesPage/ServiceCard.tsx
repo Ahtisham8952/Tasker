@@ -1,10 +1,11 @@
 import { Box, Text, Image } from '@chakra-ui/react';
 import React from 'react';
+import PropTypes from 'prop-types';
 
 const ServiceCard = ({ data }) => {
   return (
     <Box mb="30px">
-      <Image alt="img" src={data?.CardImage}></Image>
+      <Image alt="img" src={data?.CardImage} />
       <Text
         fontWeight="700"
         fontSize={{
@@ -15,7 +16,7 @@ const ServiceCard = ({ data }) => {
           xxl: '24px',
           xxxl: '32px',
         }}
-        lineHeight="150% "
+        lineHeight="150%"
         color="#1F1F1F"
       >
         {data?.CardHeading}
@@ -27,7 +28,7 @@ const ServiceCard = ({ data }) => {
           md: '16px',
           lg: '20px',
         }}
-        lineHeight="150% "
+        lineHeight="150%"
         color="#1F1F1F"
       >
         {data?.CardDescription}
@@ -49,6 +50,19 @@ const ServiceCard = ({ data }) => {
       </Box>
     </Box>
   );
+};
+
+ServiceCard.propTypes = {
+  data: PropTypes.shape({
+    CardImage: PropTypes.string,
+    CardHeading: PropTypes.string,
+    CardDescription: PropTypes.string,
+    paragraphs: PropTypes.arrayOf(
+      PropTypes.shape({
+        paragraphText: PropTypes.string,
+      })
+    ),
+  }),
 };
 
 export default ServiceCard;
