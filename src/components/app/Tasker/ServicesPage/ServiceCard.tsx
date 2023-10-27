@@ -1,10 +1,10 @@
-import { Box, Grid, Text, Image } from '@chakra-ui/react';
+import { Box, Text, Image } from '@chakra-ui/react';
 import React from 'react';
 
 const ServiceCard = ({ data }) => {
   return (
     <Box mb="30px">
-      <Image src={data?.CardImage}></Image>
+      <Image alt="img" src={data?.CardImage}></Image>
       <Text
         fontWeight="700"
         fontSize={{
@@ -33,8 +33,9 @@ const ServiceCard = ({ data }) => {
         {data?.CardDescription}
       </Text>
       <Box mt="30px">
-        {data?.pragraphs?.map((pragraph) => (
+        {data?.pragraphs?.map((pragraph, index) => (
           <Text
+            key={index}
             mb="10px"
             color="#1F4A40"
             fontSize="24px"

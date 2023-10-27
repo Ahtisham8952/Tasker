@@ -121,7 +121,7 @@ const LocationMain = () => {
               gap={{ base: '30px', md: '60px' }}
               flexDirection={{ base: 'column', md: 'row' }}
             >
-              <Image src="/tasker/locators.svg"></Image>
+              <Image alt="img" src="/tasker/locators.svg"></Image>
               <Box>
                 <Text
                   fontWeight="600"

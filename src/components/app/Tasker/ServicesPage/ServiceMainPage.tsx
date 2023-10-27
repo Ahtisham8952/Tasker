@@ -228,8 +228,8 @@ const ServiceMainPage = () => {
               }}
               w="100%"
             >
-              {Services.map((info) => {
-                return <ServiceCard data={info} />;
+              {Services.map((info, index) => {
+                return <ServiceCard data={info} key={index} />;
               })}
             </Grid>
             <Box mt={{ base: '30px', lg: '60px' }}>
@@ -241,6 +241,7 @@ const ServiceMainPage = () => {
               >
                 <Box w={{ base: '100%', md: '40%' }}>
                   <Image
+                    alt="img"
                     mb="30px"
                     mx="auto"
                     src="/tasker/britcologo.svg"
@@ -264,6 +265,7 @@ const ServiceMainPage = () => {
                 </Box>
                 <Box w={{ base: '100%', md: '40%' }}>
                   <Image
+                    alt="img"
                     mb="30px"
                     mx="auto"
                     src="/tasker/newyorlogo.svg"
