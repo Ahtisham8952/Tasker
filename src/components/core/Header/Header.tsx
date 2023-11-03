@@ -82,6 +82,8 @@ const Header = () => {
               </Flex>
               <Box display={{ lg: 'flex', base: 'none' }}>
                 <Button
+                  as={Link}
+                  href="/tasker"
                   colorScheme="#5BBB7B"
                   bg="#5BBB7B"
                   p="14px 22px"

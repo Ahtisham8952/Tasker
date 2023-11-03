@@ -1,10 +1,10 @@
-import { Box, Text, Image } from '@chakra-ui/react';
+import { Box, Text, Image, Link } from '@chakra-ui/react';
 import React from 'react';
 import PropTypes from 'prop-types';
 
 const ServiceCard = ({ data }) => {
   return (
-    <Box mb="30px">
+    <Box mb="30px" as={Link} href="/services/servicesdetail">
       <Image alt="img" src={data?.CardImage} />
       <Text
         fontWeight="700"
