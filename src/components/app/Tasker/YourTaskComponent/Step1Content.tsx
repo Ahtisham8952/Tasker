@@ -21,14 +21,14 @@ const Step1Content = () => {
     setStep(step + 1);
   };
 
-  const validateFormData = (data) => {
-    return (
-      data.title !== '' &&
-      data.description !== '' &&
-      data.location !== '' &&
-      data.date !== ''
-    );
-  };
+  // const validateFormData = (data) => {
+  //   return (
+  //     data.title !== '' &&
+  //     data.description !== '' &&
+  //     data.location !== '' &&
+  //     data.date !== ''
+  //   );
+  // };
 
   return (
     <Box p={4}>

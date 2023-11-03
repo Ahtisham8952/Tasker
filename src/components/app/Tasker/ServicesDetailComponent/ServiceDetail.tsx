@@ -100,6 +100,7 @@ const ServiceDetail = () => {
               <Box w={{ base: '100%', lg: '60%' }}>
                 {ServicesDetails?.map((Service, index) => (
                   <Box
+                    key={index}
                     p="30px"
                     border={'1px solid #CFCFCF '}
                     borderRadius={'10px'}
@@ -110,7 +111,7 @@ const ServiceDetail = () => {
                       alignItems={'center'}
                       flexDirection={{ base: 'column', md: 'row' }}
                     >
-                      <Image src={Service.Image}></Image>
+                      <Image alt="img" src={Service.Image}></Image>
                       <Box>
                         <Text
                           fontWeight="700"
@@ -175,7 +176,7 @@ const ServiceDetail = () => {
                     Cross off that to-do
                   </Text>
                   <Flex gap="30px" alignItems={'flex-start'} mb="40px">
-                    <Image src="/tasker/todo1.svg"></Image>
+                    <Image alt="img" src="/tasker/todo1.svg"></Image>
                     <Box>
                       <Text
                         fontWeight="500"
@@ -206,7 +207,7 @@ const ServiceDetail = () => {
                     </Box>
                   </Flex>
                   <Flex gap="30px" alignItems={'flex-start'} mb="40px">
-                    <Image src="/tasker/todo2.svg"></Image>
+                    <Image alt="img" src="/tasker/todo2.svg"></Image>
                     <Box>
                       <Text
                         fontWeight="500"
@@ -236,7 +237,7 @@ const ServiceDetail = () => {
                     </Box>
                   </Flex>
                   <Flex gap="30px" alignItems={'flex-start'} mb="40px">
-                    <Image src="/tasker/todo3.svg"></Image>
+                    <Image alt="img" src="/tasker/todo3.svg"></Image>
                     <Box>
                       <Text
                         fontWeight="500"
@@ -285,7 +286,7 @@ const ServiceDetail = () => {
                     Cross off that to-do
                   </Text>
                   <Flex gap="30px" alignItems={'flex-start'} mb="40px">
-                    <Image src="/tasker/reviewtype1.svg"></Image>
+                    <Image alt="img" src="/tasker/reviewtype1.svg"></Image>
                     <Box>
                       <Text
                         fontWeight="500"
@@ -299,7 +300,7 @@ const ServiceDetail = () => {
                         color="#1F1F1F"
                       >
                         Punctual, efficient service with a smile? Yes please,
-                        I'll have another task done from Tasker.
+                        Ill have another task done from Tasker.
                       </Text>
                       <Text
                         fontWeight="500"
@@ -317,7 +318,7 @@ const ServiceDetail = () => {
                     </Box>
                   </Flex>
                   <Flex gap="30px" alignItems={'flex-start'} mb="40px">
-                    <Image src="/tasker/reviewtype2.svg"></Image>
+                    <Image alt="img" src="/tasker/reviewtype2.svg"></Image>
                     <Box>
                       <Text
                         fontWeight="500"
@@ -349,7 +350,7 @@ const ServiceDetail = () => {
                     </Box>
                   </Flex>
                   <Flex gap="30px" alignItems={'flex-start'} mb="40px">
-                    <Image src="/tasker/reviewtype2.svg"></Image>
+                    <Image alt="img" src="/tasker/reviewtype2.svg"></Image>
                     <Box>
                       <Text
                         fontWeight="500"
@@ -362,7 +363,7 @@ const ServiceDetail = () => {
                         lineHeight="150% "
                         color="#1F1F1F"
                       >
-                        I was amazed how quickly Ben took care of the job. I'll
+                        I was amazed how quickly Ben took care of the job. Ill
                         definitely ask for his help again!
                       </Text>
                       <Text
