@@ -331,7 +331,7 @@ const ServiceDetail = () => {
                         lineHeight="150% "
                         color="#1F1F1F"
                       >
-                        I was amazed how quickly Ben took care of the job. I'll
+                        I was amazed how quickly Ben took care of the job. Ill
                         definitely ask for his help again!
                       </Text>
                       <Text
