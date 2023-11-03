@@ -96,7 +96,7 @@ const TaskerMain = () => {
             <TaskerHeroSection />
           </Box>
           <Flex justifyContent={'center'} mb="74px">
-            <Image src="/tasker/gapdredline.svg"></Image>
+            <Image alt="img" src="/tasker/gapdredline.svg"></Image>
           </Flex>
           <Flex justifyContent={'center'}>
             <Box>
@@ -237,7 +237,7 @@ const TaskerMain = () => {
             </Flex>
           </Box>
           <Flex justifyContent={'center'} my={{ base: '20px', md: '60px' }}>
-            <Image src="/tasker/gapdredline.svg"></Image>
+            <Image alt="img" src="/tasker/gapdredline.svg"></Image>
           </Flex>
           <Box>
             <Text
@@ -357,7 +357,7 @@ const TaskerMain = () => {
             </Flex>
           </Box>
           <Flex justifyContent={'center'} my={{ base: '20px', md: '60px' }}>
-            <Image src="/tasker/gapdredline.svg"></Image>
+            <Image alt="img" src="/tasker/gapdredline.svg"></Image>
           </Flex>
           <Box my={{ base: '30px', md: '60px' }}>
             <Text
@@ -391,6 +391,7 @@ const TaskerMain = () => {
             >
               {Questions?.map((li, index) => (
                 <Box
+                  key={index}
                   pb="15px"
                   borderBottom={'1px solid #E7E7E7'}
                   w={{ base: '100%', md: 'max-content' }}
