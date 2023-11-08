@@ -5,59 +5,59 @@ import LayoutWrapper from '../../../core/LayoutWrapper/LayoutWrapper';
 import CitiesComponent from '../LandingPage/CitiesComponent';
 const WorkCities = [
   {
-    CityImage: '/header/CityTop1.svg',
+    CityImage: '/header/CityTop1.webp',
     CityName: 'Atlanta',
   },
   {
-    CityImage: '/header/CityTop1.svg',
+    CityImage: '/header/CityTop1.webp',
     CityName: 'Austin ',
   },
   {
-    CityImage: '/header/CityTop1.svg',
+    CityImage: '/header/CityTop1.webp',
     CityName: 'Boston ',
   },
   {
-    CityImage: '/header/CityTop1.svg',
+    CityImage: '/header/CityTop1.webp',
     CityName: 'Chicago ',
   },
   {
-    CityImage: '/header/CityTop1.svg',
+    CityImage: '/header/CityTop1.webp',
     CityName: 'Dallas/ Fort Worth ',
   },
   {
-    CityImage: '/header/CityTop1.svg',
+    CityImage: '/header/CityTop1.webp',
     CityName: 'Kansas City ',
   },
   {
-    CityImage: '/header/CityTop1.svg',
+    CityImage: '/header/CityTop1.webp',
     CityName: 'Denver ',
   },
   {
-    CityImage: '/header/CityTop1.svg',
+    CityImage: '/header/CityTop1.webp',
     CityName: 'Houston ',
   },
   {
-    CityImage: '/header/CityTop1.svg',
+    CityImage: '/header/CityTop1.webp',
     CityName: 'LA & OC ',
   },
   {
-    CityImage: '/header/CityTop1.svg',
+    CityImage: '/header/CityTop1.webp',
     CityName: 'Miami ',
   },
   {
-    CityImage: '/header/CityTop1.svg',
+    CityImage: '/header/CityTop1.webp',
     CityName: 'New York City ',
   },
   {
-    CityImage: '/header/CityTop1.svg',
+    CityImage: '/header/CityTop1.webp',
     CityName: 'philadelphia ',
   },
   {
-    CityImage: '/header/CityTop1.svg',
+    CityImage: '/header/CityTop1.webp',
     CityName: 'New Heaven ',
   },
   {
-    CityImage: '/header/CityTop1.svg',
+    CityImage: '/header/CityTop1.webp',
     CityName: 'phoenix ',
   },
 ];
