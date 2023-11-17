@@ -1,13 +1,13 @@
 import React from 'react';
 import {
-  ChakraProvider,
+ 
   Box,
   RangeSlider,
   RangeSliderTrack,
   RangeSliderFilledTrack,
   RangeSliderThumb,
   Text,
-  Icon,
+
 } from '@chakra-ui/react';
 
 function PriceRangeSlider() {

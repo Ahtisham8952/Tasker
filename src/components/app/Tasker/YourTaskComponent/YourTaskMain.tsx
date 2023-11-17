@@ -5,7 +5,7 @@ import {
   Flex,
   Image,
   Step,
-  StepDescription,
+ 
   StepIcon,
   StepIndicator,
   StepNumber,
@@ -38,7 +38,7 @@ function YourTaskMain() {
     <Box py="50px">
       <Flex maxW={'1500px'} px="20px" mx="auto" alignItems={'center'}>
         <Box w="30%">
-          <Image src="/tasker/taskerlogo.png"></Image>
+          <Image alt="img" src="/tasker/taskerlogo.png"></Image>
         </Box>
         <Box w="70%">
           <Stepper index={activeStep}>

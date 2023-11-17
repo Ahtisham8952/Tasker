@@ -1,6 +1,7 @@
 import React from 'react';
 import { Box, Grid } from '@chakra-ui/react';
 import { useRadio, useRadioGroup } from '@chakra-ui/react';
+import PropTypes from 'prop-types';  // Import prop-types
 
 function RadioCard(props) {
   const { getInputProps, getRadioProps } = useRadio(props);
@@ -35,6 +36,11 @@ function RadioCard(props) {
     </Box>
   );
 }
+
+// Add prop types for the RadioCard component
+RadioCard.propTypes = {
+  children: PropTypes.node.isRequired,
+};
 
 function DatesRadio() {
   const options = ['Today', 'Within 3 Days', 'Within a Week', 'Choose Dates'];
@@ -72,4 +78,5 @@ function DatesRadio() {
     </Grid>
   );
 }
+
 export default DatesRadio;

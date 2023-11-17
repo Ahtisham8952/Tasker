@@ -11,7 +11,7 @@ import { ChevronDownIcon } from '@chakra-ui/icons';
 
 function generateTimeOptions() {
   const timeOptions = [];
-  let currentTime = new Date();
+  const currentTime = new Date();
   currentTime.setHours(8, 0, 0, 0); // Set the initial time to 8:00 AM
 
   while (

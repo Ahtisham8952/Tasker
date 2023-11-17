@@ -2,13 +2,13 @@ import { CheckCircleIcon, StarIcon } from '@chakra-ui/icons';
 import { Box, Flex, Image, Text, Button } from '@chakra-ui/react';
 import React from 'react';
 
-const TaskerCard = ({ data }) => {
+const TaskerCard = () => {
   return (
     <>
       <Box border="1px solid #B9B9B9" borderRadius="5px" p="30px">
         <Flex justifyContent={'space-between'} gap="40px">
           <Box w="30%">
-            <Image mb="20px" src="/tasker/taskerimg1.png"></Image>
+            <Image mb="20px" alt='img' src="/tasker/taskerimg1.png"></Image>
             <Box mb="20px">
               <Text
                 fontWeight="700"
@@ -113,7 +113,7 @@ const TaskerCard = ({ data }) => {
                   </Text>
                 </Flex>
                 <Flex gap="20px" alignItems={'center'}>
-                  <Image src="/tasker/customvehivle.svg"></Image>
+                  <Image alt="img" src="/tasker/customvehivle.svg"></Image>
                   <Text
                     fontWeight="500"
                     fontSize={{
@@ -183,7 +183,7 @@ const TaskerCard = ({ data }) => {
                       lineHeight="150% "
                       color="#1F1F1F"
                     >
-                      "Very professional and meticulous "
+                       Very professional and meticulous 
                     </Text>
                     <Text
                       fontWeight="500"

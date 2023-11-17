@@ -69,7 +69,7 @@ const Terms = () => {
           >
             You are your own business and will be working as an independent
             contractor for your Clients that you connect with on the Tasker
-            platform. You are not an employee of Tasker. We don't supervise,
+            platform. You are not an employee of Tasker. We dont supervise,
             direct or control your work - you are responsible for how you
             present yourself to your Clients.
           </Text>
@@ -89,7 +89,7 @@ const Terms = () => {
           >
             Our Terms of Service govern the use of the Tasker platform by all
             Users. please read them. We are looking forward to having you join
-            us on the platform so let's get started
+            us on the platform so lets get started
           </Text>
           <Text
             mb="20px"

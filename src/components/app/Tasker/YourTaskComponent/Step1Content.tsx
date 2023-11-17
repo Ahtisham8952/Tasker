@@ -297,7 +297,7 @@ const Step1Content = () => {
                 >
                   Start the conversation and tell your Tasker what you need
                   done. This helps us show you only qualified and available
-                  Taskers for the job. Don't worry, you can edit this later.
+                  Taskers for the job. Dont worry, you can edit this later.
                 </Text>
                 <Textarea
                   resize={'none'}
