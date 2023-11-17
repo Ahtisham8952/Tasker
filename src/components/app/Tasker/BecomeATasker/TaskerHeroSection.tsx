@@ -73,6 +73,8 @@ const TaskerHeroSection = () => {
             $38 per hour
           </Text>
           <Button
+          as={Link}
+          href="/tasker/terms"
             my="24px"
             bg="#1F4A40"
             colorScheme="#1F4A40"

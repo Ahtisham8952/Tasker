@@ -9,8 +9,8 @@ function Step2Content() {
   return (
     <>
       <Box>
-        <Flex>
-          <Box w="30%">
+        <Flex gap="30px" flexDirection={{ base: 'column', lg: 'row' }}>
+          <Box w={{ base: '100%', lg: '30%' }}>
             <Box border="1px solid #CFCFCF" borderRadius={'10px'} p="30px">
               <Box mb="20px" pb="20px" borderBottom="1px solid #7C7C7C">
                 <Text
@@ -137,7 +137,7 @@ function Step2Content() {
               </Box>
             </Box>
           </Box>
-          <Box w="70%">
+          <Box w={{ base: '100%', lg: '70%' }}>
             <TaskerCard />
           </Box>
         </Flex>
